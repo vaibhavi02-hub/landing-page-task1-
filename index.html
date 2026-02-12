@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">Vibe</div>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Dark Mode Toggle -->
+            <button id="theme-toggle">🌙</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero fade-in">
+        <div class="hero-content">
+            <h1>Build Modern Websites Easily</h1>
+            <p>Create clean and responsive websites using HTML & CSS.</p>
+            <a href="#" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="feature-box slide-up">
+            <h3>Responsive</h3>
+            <p>Looks great on all devices.</p>
+        </div>
+
+        <div class="feature-box slide-up">
+            <h3>Modern Design</h3>
+            <p>Clean and attractive layout.</p>
+        </div>
+
+        <div class="feature-box slide-up">
+            <h3>Easy to Customize</h3>
+            <p>Simple structure for beginners.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Vaibhavi | All Rights Reserved</p>
+    </footer>
+
+<script>
+    const toggleBtn = document.getElementById("theme-toggle");
+    const body = document.body;
+
+    toggleBtn.addEventListener("click", () => {
+        body.classList.toggle("dark-mode");
+
+        if(body.classList.contains("dark-mode")){
+            toggleBtn.textContent = "☀️";
+        } else {
+            toggleBtn.textContent = "🌙";
+        }
+    });
+</script>
+
+</body>
+</html>
