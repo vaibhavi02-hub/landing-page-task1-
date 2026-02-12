@@ -7,7 +7,7 @@ This project demonstrates layout design, animations, dark/light mode toggle, and
 ---
 
 ## 🚀 Live Demo
-
+https://vaibhavi02-hub.github.io/landing-page-task1-/
 
 
 ---
